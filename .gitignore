@@ -1,0 +1,8 @@
+api_token.py
+.env_local
+
+.mypy_cache/
+.vscode/
+venv/
+__pycache__/
+.idea
