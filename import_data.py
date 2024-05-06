@@ -1,17 +1,8 @@
 import bson
-from pymongo import MongoClient
 from app import Collection
 from pathlib import Path
 
-# # Making Connection
-# myclient = MongoClient("mongodb://localhost:27017/")
-#
-# # database
-# db = myclient["GFG"]
-#
-# # Created or Switched to collection
-# # names: GeeksForGeeks
-# Collection = db["data"]
+
 bson_file = open(Path('dump','sampleDB','sample_collection.bson'), 'rb')
 bson_data = bson.decode_all(bson_file.read())
 bson_file.close()
